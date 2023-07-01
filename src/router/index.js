@@ -10,9 +10,29 @@ const routes = [
   {
     path: '/about',
     name: 'about',
-    component: () => import('../views/AboutView.vue')
+    component: () => import('../views/AboutView.vue'),
+  },
+  {
+    path: '/resume',
+    name: 'resume',
+    component: () => import('../views/ResumeView.vue'),
+  },
+  {
+    path: '/project',
+    name: 'project',
+    component: () => import('../views/ProjectView.vue'),
+  },
+  {
+    path: '/testimonial',
+    name: 'testimonial',
+    component: () => import('../views/TestimonialView.vue'),
+  },
+  {
+    path: '/contact',
+    name: 'contact',
+    component: () => import('../views/ContactView.vue'),
   }
-]
+];
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
