@@ -1,6 +1,7 @@
 <template>
+    
     <div >
-        CopyRight &copy; 2023
+        CopyRight &copy; {{ cYear }}
     </div>
 </template>
 
