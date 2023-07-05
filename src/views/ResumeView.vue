@@ -12,10 +12,10 @@
             </div>
         </div>
         <h3 class="display-3">Skill</h3>
-        <div class="cards-wrapper" v-for="data1 in skill" :key="data1.id">
+        <div class="cards-wrapper" v-for="data in skill" :key="data.id">
             <div class="images">
-            <img :src="data1.picture" alt="..." loading="lazy">
-            <h2>{{ data1.title }}</h2>
+            <img :src="data.picture" alt="..." loading="lazy">
+            <h2>{{ data.title }}</h2>
             </div>
             </div>
     </div>
