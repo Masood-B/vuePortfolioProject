@@ -88,6 +88,6 @@ p{
     visibility: visible;
 }
 .card:hover img{
-    transform: scale(1.1) rotate(-3deg);
+    transform: scale(1.1);
 }
 </style>
