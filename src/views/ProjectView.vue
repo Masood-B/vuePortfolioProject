@@ -5,11 +5,11 @@
             <div class="row justify-content-center gap-2 d-flex" >
         <div class="card " v-for="data in project" :key="data.id">
             <img :src="data.background" alt="..." loading="lazy">
-            <div class="card-body">
-              <h2 class="card-title">
+            <div class="card-body card-title">
+              <h2 >
                {{ data.title }}
               </h2>
-              <p>
+              <p class="d-flex justify-content-between">
               <a :href="data.githublink" target="_blank">
                 Github
               </a>
@@ -42,24 +42,24 @@
     align-items: center;
 }
 .card{
-    height: 500px;
+    height: 400px;
+    width:500px;
     margin: 50px;
     box-shadow: 5px 5px 20px black;
     overflow:hidden;
 }
 img{
-   height:500px;
-   width: 350px;
+   width: 100%;
    border-radius: 3px;
    transition: .3s;
 }
 .card-title{
-    height: 70px;
-    width: 350px;
+    height: 80px;
+    width: 475px;
     padding: 6px;
     box-sizing: border-box;
     position: absolute;
-    bottom: 240px;
+    bottom: 0px;
     background: rgb(27, 27, 27, .5);
     color: white;
     transition: .3s;
@@ -78,9 +78,10 @@ p{
     cursor: pointer;
 }
 .card:hover .card-title{
-    height: 220px;
-    bottom: 240px;
+    height: 150px;
+    bottom: 0px;
     background: black;
+    opacity: 0.8
 }
 .card:hover p{
     opacity: 1;
