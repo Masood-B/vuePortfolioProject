@@ -1,20 +1,26 @@
 <template>
-    <div>
+    <div class="main">
         <h2 class="display-2">Project</h2>
-        <div class="card" v-for="data in project" :key="data.id">
+        <div class="container">
+            <div class="row justify-content-center gap-2 d-flex" >
+        <div class="card " v-for="data in project" :key="data.id">
             <img :src="data.background" alt="..." loading="lazy">
-            <div class="card-content">
+            <div class="card-body">
               <h2 class="card-title">
                {{ data.title }}
               </h2>
+              <p>
               <a :href="data.githublink" target="_blank">
                 Github
               </a>
               <a :href="data.netlifylink" target="_blank">
                 Netlify
             </a>
+            </p>
             </div>
           </div>
+        </div>
+    </div>
     </div>
 </template>
 
@@ -32,10 +38,55 @@
 </script>
 
 <style scoped>
-img{
-    width:10rem;
+.main{
+    align-items: center;
 }
 .card{
-    width:20rem;
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    overflow:hidden;
+}
+img{
+   height:500px;
+   width: 350px;
+   border-radius: 3px;
+   transition: .3s;
+}
+.card-title{
+    height: 70px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 240px;
+    background: rgb(27, 27, 27, .5);
+    color: white;
+    transition: .3s;
+}
+h1{
+    margin: 10px;
+    font-size: 40px;
+}
+p{
+    margin: 20px;
+    font-size: 20px;
+    visibility: hidden;
+    opacity: 0;
+}
+.card:hover{
+    cursor: pointer;
+}
+.card:hover .card-title{
+    height: 220px;
+    bottom: 240px;
+    background: black;
+}
+.card:hover p{
+    opacity: 1;
+    visibility: visible;
+}
+.card:hover img{
+    transform: scale(1.1) rotate(-3deg);
 }
 </style>

@@ -4,7 +4,8 @@ export default createStore({
   state: {
     education: null,
     skill: null,
-    project: null
+    project: null,
+    testimonial: null
   },
   getters: {
   },
@@ -17,6 +18,9 @@ export default createStore({
     },
     setProject (state, dataProject){
       state.project = dataProject
+    },
+    setTestimonial (state, dataTestimonial){
+      state.testimonial = dataTestimonial
     }
   },
   actions: {
@@ -48,6 +52,17 @@ export default createStore({
         let {Projects} = await prototype.json();
         if (Projects){
           context.commit('setProject', Projects);
+        }
+      }catch(event){
+        console.log(event.message);
+      }
+    },
+    async fetchTestimonial (context){
+      try{
+        let index = await fetch(dataURL);
+        let {Testimonials} = await index.json();
+        if (Testimonials){
+          context.commit('setTestimonial', Testimonials);
         }
       }catch(event){
         console.log(event.message);
