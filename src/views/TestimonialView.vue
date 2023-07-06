@@ -4,10 +4,10 @@
         <div class="row justify-content-center gap-2 d-flex">
 <div class="card mb-3" v-for="data in testimonial" :key="data.id" style="max-width: 900px;">
     <div class="row g-0">
-      <div class="col-md-4">
-        <img :src="data.profile" class="img-fluid rounded-start" alt="..." loading="lazy">
+      <div class="col-md-3">
+        <img :src="data.profile" class="img-fluid rounded-start img-fit" alt="..." loading="lazy">
       </div>
-      <div class="col-md-8">
+      <div class="col-md-9" id="testimonial_paragraph">
         <div class="card-body">
           <h5 class="card-title">{{ data.name }}</h5>
           <p class="card-text">{{ data.statement }}</p>
@@ -34,4 +34,17 @@
 
 <style scoped>
 
+img{
+  height: 20rem;
+}
+
+.img-fit{
+  object-fit: cover;
+}
+#testimonial_paragraph{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 </style>

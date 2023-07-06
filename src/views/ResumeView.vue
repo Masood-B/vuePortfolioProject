@@ -13,9 +13,9 @@
         </div>
         <h3 class="display-3">Skill</h3>
         <div class="row justify-content-center gap-2 d-flex">
-        <div class="cards-wrapper" v-for="data in skill" :key="data.id">
-            <div class="images">
-            <img :src="data.picture" alt="..." loading="lazy" style="width:15rem">
+        <div class="cards-wrapper col-12 col-md-4 col-lg-3 py-2" v-for="data in skill" :key="data.id">
+            <div>
+            <img :src="data.picture" alt="..." loading="lazy" style="width:10rem" class="img-fluid">
             <h2 class="skill-title">{{ data.title }}</h2>
             </div>
             </div>
@@ -41,41 +41,28 @@
 </script>
 
 <style scoped>
-/* Education */
-.education {
-    width: 40em;
-    margin: 5px auto;
-    padding: 10px;
-}
+
+
 .card {
-    border: 4px solid var(--green);
-    margin: 10px 0;
+    margin: 5px 0;
     border-radius: 20px;
-    padding: 10px;
+    padding: 5px;
     width: 50%;
-    background-color: var(--alternative);
     border: 2px solid black;
 }  
 .card:nth-child(odd) {
     position: relative;
+    box-shadow: .5vw .2vw .7vw;
 }
 
 .card:nth-child(even) {
-    box-shadow: .5vw .2vw .7vw var(--awesomeColor);
+    box-shadow: .5vw .2vw .7vw;
     margin-left: auto;
     position: relative;
 }
  
-/* Media query */
+
 @media screen and (width < 900px) {
-/* Education */
-    .education {
-        width: 100%;
-        display: flex;
-        flex-flow: column wrap;
-        gap: 20px;
-        align-items: center;
-    }
     .card{
         width: 100%;
         flex-wrap: wrap;
@@ -97,7 +84,7 @@
     }
 }
 .cards-wrapper{
-   width: 20rem;
+   
    border: 1px solid black;
 }
 
