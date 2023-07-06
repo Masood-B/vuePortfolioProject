@@ -1,12 +1,13 @@
 <template>
     <div>
-        <div class="row justify-content-center gap-2 d-flex">
-<div class="card mb-3" v-for="data in testimonial" :key="data.id" style="max-width: 900px;">
+      <div class="container">
+        <div class="row justify-content-around gap-2 p-2">
+<div class="card col-lg-4" v-for="data in testimonial" :key="data.id">
     <div class="row g-0">
-      <div class="col-md-3">
+      <div class="col-md-4">
         <img :src="data.profile" class="img-fluid rounded-start img-fit" alt="..." loading="lazy">
       </div>
-      <div class="col-md-9" id="testimonial_paragraph">
+      <div class="col-md-8" id="testimonial_paragraph">
         <div class="card-body">
           <h5 class="card-title">{{ data.name }}</h5>
           <p class="card-text">{{ data.statement }}</p>
@@ -14,6 +15,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
     </div>
 </template>
@@ -36,7 +38,9 @@
 img{
   height: 20rem;
 }
-
+.card{
+  width:40rem;
+}
 .img-fit{
   object-fit: cover;
 }
@@ -45,7 +49,7 @@ img{
   justify-content: center;
   align-items: center;
 }
-.card-body{
+/*.card-body{
   opacity: 0;
   transform: translate3d(0, 20px 0);
 
@@ -55,5 +59,5 @@ img{
 .card-body:hover{
   opacity: 1;
   transform: translate3d(0,0,0);
-}
+}*/
 </style>
