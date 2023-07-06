@@ -1,12 +1,7 @@
 <template>
   <div>
-  <h2 class="display-2" >Home</h2>
     <div class="container-lg col-xxl-8 px-4 py-5">
       <div class="row flex-lg align-items-center g-5 py-5">
-        <div class="col-10 col-md-8 col-lg-4">
-          <img src="https://i.postimg.cc/wvd0VDyV/frontimage.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
-        </div>
-        
         <div class="animate-wrapper col-10 col-md-8 col-lg-8">
           <div class="animated-title">
             <div class="text-top">
@@ -16,7 +11,7 @@
               </div>
             </div>
             <div class="text-bottom">
-              <div><button type="button" class="btn btn-secondary btn-lg px-4 me-md-2"><router-link to="/about">About Me</router-link></button></div>
+              <div><button type="button" class="btn btn-secondary btn-lg px-4 me-md-2"><router-link to="/about" style="color:black">About Me</router-link></button></div>
             </div>
           </div>
         </div>
@@ -86,7 +81,7 @@ p{
   transform: translate(0, 100%);
 }
 .animated-title > div.text-top div p:first-child {
-  color: #767676;
+  color: #5a4545;
 }
 .animated-title > div.text-bottom {
   bottom: 0;

@@ -1,6 +1,5 @@
 <template>
     <div>
-        <h2 class="display-2">Testimonial</h2>
         <div class="row justify-content-center gap-2 d-flex">
 <div class="card mb-3" v-for="data in testimonial" :key="data.id" style="max-width: 900px;">
     <div class="row g-0">
@@ -45,6 +44,16 @@ img{
   display: flex;
   justify-content: center;
   align-items: center;
-  
+}
+.card-body{
+  opacity: 0;
+  transform: translate3d(0, 20px 0);
+
+  cursor: pointer;
+  transition: 1 all ease-in-out;
+}
+.card-body:hover{
+  opacity: 1;
+  transform: translate3d(0,0,0);
 }
 </style>
