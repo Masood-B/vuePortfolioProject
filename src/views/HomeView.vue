@@ -1,17 +1,18 @@
 <template>
   <div>
   <h2 class="display-2" >Home</h2>
-    <div class="container col-xxl-8 px-4 py-5">
-      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+    <div class="container-lg col-xxl-8 px-4 py-5">
+      <div class="row flex-lg align-items-center g-5 py-5">
         <div class="col-10 col-md-8 col-lg-4">
           <img src="https://i.postimg.cc/wvd0VDyV/frontimage.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
         </div>
+        
         <div class="animate-wrapper col-10 col-md-8 col-lg-8">
           <div class="animated-title">
             <div class="text-top">
               <div>
-                <span>I am Masood Basardien</span>
-                <span>Im pursuing my passion of becoming a game developer</span>
+                <p class="name-heading">I Am Masood Basardien</p>
+                <p>Im Pursuing My Passion Of Becoming Game Developer</p>
               </div>
             </div>
             <div class="text-bottom">
@@ -46,6 +47,9 @@
 .animate-wrapper {
   position: relative;
 }
+p{
+  font-size: 1.6rem;
+}
 .animated-title {
   color: #222;
   font-family: Roboto, Arial, sans-serif;
@@ -54,7 +58,7 @@
   position: absolute;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 50rem;
+  width: 40rem;
 }
 .animated-title > div {
   height: 50%;
@@ -67,7 +71,7 @@
   padding: 1rem 0;
   position: absolute;
 }
-.animated-title > div div span {
+.animated-title > div div p {
   display: block;
 }
 .animated-title > div.text-top {
@@ -81,11 +85,13 @@
   bottom: 0;
   transform: translate(0, 100%);
 }
-.animated-title > div.text-top div span:first-child {
+.animated-title > div.text-top div p:first-child {
   color: #767676;
 }
 .animated-title > div.text-bottom {
   bottom: 0;
+  left: 40%;
+  margin: auto;
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
@@ -93,6 +99,9 @@
   animation-fill-mode: forwards;
   top: 0;
   transform: translate(0, -100%);
+}
+.name-heading {
+  padding-bottom: 0rem;
 }
 @media (width < 1230px) {
 
