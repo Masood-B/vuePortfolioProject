@@ -1,9 +1,9 @@
 <template>
   <div>
-    <div class="container-lg col-xxl-8 px-4 py-5">
-      <div class="row flex-lg align-items-center g-5 py-5">
-        <div class="animate-wrapper col-10 col-md-8 col-lg-8">
-          <div class="animated-title">
+    <div class="container">
+      <div class="row">
+        <div class="animate-wrapper" >
+          <div class="animated-title" >
             <div class="text-top">
               <div>
                 <p class="name-heading">I Am Masood Basardien</p>
@@ -80,12 +80,11 @@ p{
   bottom: 0;
   transform: translate(0, 100%);
 }
-.animated-title > div.text-top div p:first-child {
-  color: #5a4545;
-}
+
 .animated-title > div.text-bottom {
   bottom: 0;
-  left: 40%;
+  display: flex;
+  justify-content: center;
   margin: auto;
 }
 .animated-title > div.text-bottom div {
@@ -98,7 +97,12 @@ p{
 .name-heading {
   padding-bottom: 0rem;
 }
+
 @media (width < 1230px) {
 
+}
+.row{
+  align-content: center;
+  height:78vh;
 }
 </style>

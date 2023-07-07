@@ -5,7 +5,7 @@
         <div class="card" v-for="data in educations" :key="data.id">
             <h4 class="display-4">{{ data.year }}</h4>
             <div class="card-body">
-                <p class=" ">
+                <p>
                      {{ data.description }} @ <span>{{ data.place }}</span> 
                      <a href="{{ data.certificate }}" target="_blank">{{ data.type }}</a>
                 </p>
@@ -17,13 +17,16 @@
         <div class="row">
             <div class="col-12 col-md-6 col-lg-4 py-2" v-for="data in skill" :key="data.id">
         <div class="cards-wrapper" >
-            <div>
+            <div class="skill-card">
             <img :src="data.picture" alt="..." loading="lazy" style="width:10rem" class="img-fluid">
             <h2 class="skill-title">{{ data.title }}</h2>
             </div>
             </div>
         </div>
             </div>
+        </div>
+        <div>
+            <a href="https://drive.google.com/uc?export=download&id=1jILLMCig0mg6Ka4dT8PLbL1W2DlS8l11" class="download-cv">Download</a>
         </div>
     </div>
 </template>
@@ -54,6 +57,7 @@
     padding: 5px;
     width: 50%;
     border: 2px solid black;
+    background:orange;
 }  
 .card:nth-child(odd) {
     position: relative;
@@ -89,11 +93,19 @@
     }
 }
 .cards-wrapper{
-   
+    background:orange;
    border: 1px solid black;
+   color: white;
 }
 
 .skill-title{
     font-size: 2rem;
+}
+h3{
+    color: white;
+    padding: 1rem;
+}
+.download-cv{
+    text-decoration: none;
 }
 </style>

@@ -1,61 +1,42 @@
 <template>
-    <div class="con">
-        <h2 class="display-2">Contact</h2>
-        <div class="container" id="contact_form">
-<div class="mb-4">
-    <div class="row">
-        <div class="col-md- mb-md-0 mb-5">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    <div class="con p-2">
+            <div class="container p-4">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="name" class="">Name</label>
-                            <input type="text" id="name" name="name" class="form-control m-2" placeholder="Enter Your Name:">
-                        </div>
+                        <form>
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" required>
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" required>
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label" >Message</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here" required></textarea>
+                              </div>
+                              <div>
+                                <button class="btn btn-info">Submit</button>
+                              </div>
+                        </form>
                     </div>
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="surname" class="">Surname</label>
-                            <input type="text" id="surname" name="surname" class="form-control m-2" placeholder="Enter Your Surname:">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="email" class="">E-mail</label>
-                            <input type="text" id="email" name="email" class="form-control m-2" placeholder="Enter Your E-mail:">
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form">
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea m-2" placeholder="Enter A Message:"></textarea>
-                        </div>
+                    <div class="col-md-1">
 
                     </div>
-                </div>
-            </form>
+                    <div class="col-md-5">
+                        <p class="contact-text"><i class="bi bi-telephone"></i> 079 298 0631</p>
+                        <p class="contact-text"><i class="bi bi-envelope"></i> masoodbasardien123@gmail.com</p>
 
-            <div class="text-center text-md-left">
-                <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+                        <hr>
+                        
+                        <div class="media">
+                            <ul class="d-flex justify-content-center">
+                                <li><a href="https://www.linkedin.com/in/masood-basardien-6aa759282/" target="_blank" class="icon"><i class="bi bi-linkedin"></i></a></li>
+                                <li><a href="https://github.com/Masood-B?tab=repositories" target="_blank" class="px-3"><i class="bi bi-github"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="status"></div>
-        </div>
-
-    </div>
-
-</div>
-    </div>
-    <div class="contact_me">
-        <h2>contact me</h2>
-        <div class="d-flex justify-content-around">
-        <span>Telephone: 079 298 0631</span>
-        <span>Email: masoodbasardien123@gmail.com</span>
-    </div>
-    </div>
 </div>
 </template>
 
@@ -67,32 +48,27 @@
 
 <style scoped>
 .container{
-    border: 1px solid black;
-    background:gray;
+    background: orange;
 }
-
-.con{
-    height: 85vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 5.8rem;
+.btn-info{
+    width:50%;
+    letter-spacing: 2px;
+    background: transparent;
+    transition: all 0.5s ease-in-out;
 }
-.display-2 {
-    margin-bottom: 5vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+.btn-info:hover{
+    transform: scale(1.1);
 }
-#contact_form {
-    height: 30rem;
-    padding-top: 3rem;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 2rem;
+.contact-text{
+    font-size:17px;
 }
-.contact_me{
-    padding-top:2rem;
+ul{
+    list-style: none;
+}
+ul li a{
+    float:left;
+}
+.icon:hover{
+    color: blue;
 }
 </style>
