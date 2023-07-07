@@ -7,7 +7,7 @@
         <div>
             <a href="https://www.linkedin.com/in/masood-basardien-6aa759282/" target="_blank"><i class="bi bi-linkedin"></i></a> <a href="https://github.com/Masood-B?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
         </div>
-        <p>CopyRight &copy; {{ cYear }} </p>
+        <p>CopyRight &copy; {{ cYear }} Masood Basardien</p>
     </div>
 </template>
 
