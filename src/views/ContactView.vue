@@ -1,8 +1,8 @@
 <template>
     <div class="con p-2">
-            <div class="container p-4">
+            <div class="container p-4 animate__animated animate__fadeInLeftBig animate__delay-2">
                 <div class="row">
-                    <div class="col-md-6">
+                    <div class="col-md-6 ">
                         <form>
                             <div class="mb-3">
                                 <label for="exampleFormControlInput1" class="form-label">Full Name</label>

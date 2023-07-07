@@ -1,6 +1,6 @@
 <template>
     
-    <div style="height: 10vh" class="d-flex flex-column ">
+    <div>
         <div class="container">
             <hr>
         </div>

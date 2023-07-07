@@ -40,6 +40,8 @@ img{
 }
 .card{
   width:40rem;
+  background: orange;
+  border: 2px solid black;
 }
 .img-fit{
   object-fit: cover;
@@ -49,15 +51,7 @@ img{
   justify-content: center;
   align-items: center;
 }
-/*.card-body{
-  opacity: 0;
-  transform: translate3d(0, 20px 0);
-
-  cursor: pointer;
-  transition: 1 all ease-in-out;
+h5,p{
+  color: black
 }
-.card-body:hover{
-  opacity: 1;
-  transform: translate3d(0,0,0);
-}*/
 </style>
