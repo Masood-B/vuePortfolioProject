@@ -2,7 +2,7 @@
     <div>
         <div class="container">
             <div class="row" >
-                <div class="col-12 col-md-6 col-lg-4 py-2 animate__animated animate__fadeInUpBig animate__delay-2"  v-for="data in project" :key="data.id">
+                <div class="col-12 col-md-6 col-lg-4 py-2 git "  v-for="data in project" :key="data.id">
                     <div class="card">
                         <img :src="data.background" alt="..." loading="lazy">
                         <div class="card-body card-title">
@@ -43,5 +43,8 @@
 .title{
     font-size:medium;
 }
-
+.card{
+    background: orange;
+  border: 2px solid black;
+}
 </style>
