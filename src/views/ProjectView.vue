@@ -47,4 +47,8 @@
     background: orange;
   border: 2px solid black;
 }
+a{
+    color: white;
+    font-size: 1rem;
+}
 </style>

@@ -78,8 +78,10 @@
 .btn-info{
     width:50%;
     letter-spacing: 2px;
-    background: transparent;
+    background: brown;
     transition: all 0.5s ease-in-out;
+    border: 1px solid black;
+    color: white;
 }
 .btn-info:hover{
     transform: scale(1.1);
