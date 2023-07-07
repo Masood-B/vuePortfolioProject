@@ -2,17 +2,23 @@
     <div class="con p-2">
             <div class="container p-4 animate__animated animate__fadeInLeftBig animate__delay-2">
                 <div class="row">
-                    <div class="col-md-6 ">
-                        <form>
+                    <div id="form_left" class="col-md-6 ">
+                        <form action="https://formspree.io/f/xbjewvba" method="POST">
                             <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Full Name</label>
-                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" required>
-                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your Name" required>
+                                <label for="exampleFormControlInput1" name="fullname" class="form-label">Full Name</label>
+                                <input name="name" type="name" class="form-control" id="exampleFormControlInput1" placeholder="Your Name"  required
+                                oninvalid="this.setCustomValidity('You need to put your name here')"
+                                oninput="this.setCustomValidity('')">
+                                <label for="exampleFormControlInput2" name="email" class="form-label">Email address</label>
+                                <input name="email" type="email" class="form-control" id="exampleFormControlInput2" placeholder="Your Email"  required
+                                oninvalid="this.setCustomValidity('You need to put your email here')"
+                                oninput="this.setCustomValidity('')">
                               </div>
                               <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label" >Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here" required></textarea>
+                                <label for="exampleFormControlTextarea1" name="message" class="form-label" >Message</label>
+                                <textarea class="form-control" name="message" id="exampleFormControlTextarea1" rows="3" placeholder="Write Here"  required
+                                oninvalid="this.setCustomValidity('You need to write here')"
+                                oninput="this.setCustomValidity('')"></textarea>
                               </div>
                               <div>
                                 <button class="btn btn-info">Submit</button>
@@ -22,7 +28,7 @@
                     <div class="col-md-1">
 
                     </div>
-                    <div class="col-md-5">
+                    <div id="form_right" class="col-md-5">
                         <p class="contact-text"><i class="bi bi-telephone"></i> 079 298 0631</p>
                         <p class="contact-text"><i class="bi bi-envelope"></i> masoodbasardien123@gmail.com</p>
 
@@ -37,6 +43,7 @@
                     </div>
                 </div>
             </div>
+            
 </div>
 </template>
 
@@ -47,8 +54,26 @@
 </script>
 
 <style scoped>
+#form_left {
+    margin-top: 7rem;
+}
+#form_right {
+    margin-top: 11rem;
+}
+@media (width < 780px) {
+    #form_left {
+        margin-top: 0;
+    }
+    #form_right {
+        margin-top: 0;
+    }
+}
 .container{
     background: orange;
+    height: 70vh;
+    margin: auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .btn-info{
     width:50%;

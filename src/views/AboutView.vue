@@ -3,7 +3,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <img
+          <img class="profile-img animate__animated animate__bounceInDown animate__delay-2"
             src="https://i.postimg.cc/wvd0VDyV/frontimage.jpg"
             alt=""
             loading="lazy"
@@ -12,7 +12,7 @@
         </div>
 
         <div class="col-md-6">
-          <p class="lead about-me">
+          <p class="lead about-me animate__animated animate__backInRight animate__delay-1s">
             I'm a guy who is 21 year at age. I live in Mitchell's Plain where i
             attended Meadowridge Primary School and went to Spine Road High
             School during my young days. I went to Cape Peninsula University of
@@ -20,7 +20,7 @@
             following a dream that i had as a kid, to have influence over the
             game world I want to make.
           </p>
-          <p class="lead about-me">
+          <p class="lead about-me animate__animated animate__backInRight animate__delay-2s">
             I'm the type of person who's motivated and driven to be a great
             person someday. I'm not afraid to take a risk to learn new stuff. I
             always like to interact with people that would help me become a
@@ -30,9 +30,9 @@
             affect me.
           </p>
 
-          <div class="row second">
+          <div class="row second animate__animated animate__lightSpeedInRight animate__delay-3s">
             <div class="col-md-4">
-              <div class="card" style="width: 15rem">
+              <div class="card " style="width: 15rem">
                 <img
                   src="https://i.postimg.cc/76wj59ZX/top-10-books-every-college-student-read-1024x640.jpg"
                   class="card-img-top img-fluid"
@@ -105,9 +105,14 @@ img {
 p {
   color: black;
 }
+h5{
+  text-decoration: underline;
+}
 
 .card{
   width: 13rem !important;
+  background:orange;
+  border: 1px solid black;
 }
 
 @media screen and (max-width: 760px) {
@@ -127,5 +132,14 @@ p {
     align-items: center;
     
   }
+}
+.profile-img{
+  border: 5px solid #1b9dc5;
+  padding: 2px;
+  border-radius: 50%;
+  border-top-color: #cf741f;
+  border-left-color: #cf741f;
+  width: 100%;
+  margin-top: 5rem;
 }
 </style>

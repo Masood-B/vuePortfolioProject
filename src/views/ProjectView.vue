@@ -2,7 +2,7 @@
     <div>
         <div class="container">
             <div class="row" >
-                <div class="col-12 col-md-6 col-lg-4 py-2 git "  v-for="data in project" :key="data.id">
+                <div class="col-12 col-md-6 col-lg-4 py-2 git animate__animated animate__lightSpeedInLeft animate__delay-1s"  v-for="data in project" :key="data.id">
                     <div class="card">
                         <img :src="data.background" alt="..." loading="lazy">
                         <div class="card-body card-title">

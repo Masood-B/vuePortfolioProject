@@ -7,4 +7,5 @@ import '@/assets/css/style.css'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import "bootstrap-icons/font/bootstrap-icons.css"
-createApp(App).use(store).use(router).mount('#app')
+import { MotionPlugin } from '@vueuse/motion'
+createApp(App).use(store).use(router).use(MotionPlugin).mount('#app')
