@@ -2,12 +2,11 @@
     <div>
         <div class="container ">
         <h3 class="display-3">Education</h3>
-        <div class="card animate__animated animate__flipInX animate__delay-1s" v-for="data in educations" :key="data.id">
+        <div class="card animate__animated animate__flipInX animate__delay-0s" v-for="data in educations" :key="data.id">
             <h4 class="display-4">{{ data.year }}</h4>
             <div class="card-body">
                 <p>
                      {{ data.description }} @ <span>{{ data.place }}</span> 
-                     <a href="{{ data.certificate }}" target="_blank">{{ data.type }}</a>
                 </p>
             </div>
         </div>
@@ -26,7 +25,7 @@
             </div>
         </div>
         <div>
-            <a href="https://drive.google.com/uc?export=download&id=1jILLMCig0mg6Ka4dT8PLbL1W2DlS8l11" class="download-cv">Download</a>
+            <a href="https://drive.google.com/uc?export=download&id=1jILLMCig0mg6Ka4dT8PLbL1W2DlS8l11" class="download-cv" style="font-size:2rem">Download CV</a>
         </div>
     </div>
 </template>
@@ -50,7 +49,6 @@
 
 <style scoped>
 
-
 .card {
     margin: 5px 0;
     border-radius: 20px;
@@ -59,6 +57,10 @@
     border: 2px solid black;
     background:orange;
 }  
+.cards-wrapper:hover{
+    transform: scale(1.1);
+  transition: 0.7s;
+}
 .card:nth-child(odd) {
     position: relative;
     box-shadow: .5vw .2vw .7vw;

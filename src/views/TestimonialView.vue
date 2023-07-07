@@ -2,7 +2,7 @@
     <div>
       <div class="container">
         <div class="row justify-content-around gap-2 p-2">
-<div class="card col-lg-4" v-for="data in testimonial" :key="data.id">
+<div class="card col-lg-4 animate__animated animate__flipInY animate__delay-1s" v-for="data in testimonial" :key="data.id">
     <div class="row g-0">
       <div class="col-md-4">
         <img :src="data.profile" class="img-fluid rounded-start img-fit" alt="..." loading="lazy">

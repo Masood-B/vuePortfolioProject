@@ -1,7 +1,8 @@
 <template>
   <div>
-    <div class="container">
+    <div class="container p-2">
       <div class="row">
+        <div class="col">
         <div class="animate-wrapper" >
           <div class="animated-title" >
             <div class="text-top">
@@ -15,6 +16,7 @@
             </div>
           </div>
         </div>
+      </div>
       </div>
     </div>
   </div>
@@ -45,6 +47,15 @@
 p{
   font-size: 1.6rem;
 }
+button{
+  background:orange;
+}
+button:hover{
+  background:white;
+  color: orange;
+  transform: scale(1.1);
+  transition: 0.7s;
+}
 .animated-title {
   color: #222;
   font-family: Roboto, Arial, sans-serif;
@@ -66,9 +77,7 @@ p{
   padding: 1rem 0;
   position: absolute;
 }
-.animated-title > div div p {
-  display: block;
-}
+
 .animated-title > div.text-top {
   border-bottom: 1vmin solid #000;
   top: 0;
@@ -85,24 +94,72 @@ p{
   bottom: 0;
   display: flex;
   justify-content: center;
-  margin: auto;
 }
 .animated-title > div.text-bottom div {
   animation: showBottomText 0.5s;
   animation-delay: 1.75s;
   animation-fill-mode: forwards;
-  top: 0;
+ 
   transform: translate(0, -100%);
 }
 .name-heading {
-  padding-bottom: 0rem;
+  padding-bottom: 1rem;
 }
 
-@media (width < 1230px) {
+@media (width < 646px) {
 
+  .animated-title > div{
+    width: 100%;
+  }
+  .animated-title{
+    left:68%;
+    width:100%;
+    position: static;
+    transform: translate(0,0);
+  }
+  .animated-title > div.text-top div{
+    top:0%;
+    widows: 100%;
+  }
+  p{
+    font-size:1.3rem;
+  }
 }
 .row{
   align-content: center;
   height:78vh;
+}
+
+@media (width < 529px) {
+  p{
+    font-size:1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .animated-title > div.text-top div{
+    width: 100%;
+  }
+
+  @media (width < 412px){
+    p{
+      font-size:.9rem;
+      display: flex;
+      justify-content: center;
+    }
+    .animated-title > div.text-top div{
+      width: 100%;
+    }
+  }
+  @media (width < 351px){
+    p{
+      font-size:.7rem;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0rem;
+    }
+    .animated-title > div.text-top div{
+      width: 100%;
+    }
+  }
 }
 </style>
