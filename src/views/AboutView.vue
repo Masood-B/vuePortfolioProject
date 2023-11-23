@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-6 d-none d-md-block">
           <img
-            class="profile-img animate__animated animate__bounceInDown animate__delay-2"
+            class="profile-img"
             src="https://i.postimg.cc/wvd0VDyV/frontimage.jpg"
             alt=""
             loading="lazy"
@@ -13,14 +13,14 @@
         </div>
 
         <div class="col-md-6">
-          <p class="lead about-me animate__animated animate__backInRight animate__delay-1s">
+          <p class="lead about-me">
             I'm a 21-year-old guy living in Mitchell's Plain. I attended
             Meadowridge Primary School and Spine Road High School in my younger
             days. Although I spent 3 years at Cape Peninsula University of
             Technology, I didn't finish. Now, I'm pursuing my childhood dream
             of influencing the game world.
           </p>
-          <p class="lead about-me animate__animated animate__backInRight animate__delay-2s">
+          <p class="lead about-me">
             I'm motivated and driven to become a great person. I'm not afraid
             to take risks and learn new things. I enjoy interacting with people
             who help me become a better version of myself. I love reading
@@ -28,7 +28,7 @@
             spending time alone to clear unwanted thoughts.
           </p>
 
-          <div class="row second animate__animated animate__lightSpeedInRight animate__delay-3s">
+          <div class="row second">
             <div class="col-md-4">
               <div class="card" style="width: 100%">
                 <img
@@ -96,6 +96,12 @@ export default {};
 <style scoped>
 .about-me {
   color: #080000;
+  animation: backInRight;
+  animation-duration: 2s;
+}
+.card{
+  animation: backInRight;
+  animation-duration: 2s;
 }
 img {
   width: 100%;
@@ -113,7 +119,7 @@ h5 {
   border: 1px solid black;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 992px) {
   .second {
     width: 100%;
     display: flex;
