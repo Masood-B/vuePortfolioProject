@@ -25,7 +25,7 @@
             </div>
         </div>
         <div>
-            <a href="https://drive.google.com/uc?export=download&id=1jILLMCig0mg6Ka4dT8PLbL1W2DlS8l11" class="download-cv" style="font-size:2rem">Download CV</a>
+            <a href="https://drive.google.com/uc?export=download&id=1uvnYLlBVXDAuVk_i8MerYvzm0PP170DI" class="download-cv" style="font-size:2rem">Download CV</a>
         </div>
     </div>
 </template>
